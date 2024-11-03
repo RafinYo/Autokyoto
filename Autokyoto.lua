@@ -2,7 +2,7 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Library/refs/heads/main/Library%20toraisme/Script.lua", true))()
 
 -- Create the main window for the UI
-local FarmWindow = Library:CreateWindow("Xyris Hub - Auto Kyoto")
+local FarmWindow = library:CreateWindow("Xyris Hub - Auto Kyoto")
 
 -- Add the "Main" tab
 local MainTab = FarmWindow:AddTab("Main")
@@ -64,19 +64,19 @@ MainTab:AddButton({
     end
 })
 
--- Auto Kyoto button with new guidance notification
+-- Auto Kyoto button
 MainTab:AddButton({
     text = "Auto Kyoto",
     callback = function()
         local ping = UserPing:GetValue()
         local waitTime = calculateWaitTime(ping)
-        
-        showRobloxNotification("While using Flowing Water, spam Lethal Whirlwind Stream to maximize the combo!")
         pressKey1()
         wait(waitTime)
         teleportForward()
         pressKey2()
         showRobloxNotification("Auto Kyoto combo performed!")
+        wait(1) -- Wait before showing the next message
+        showRobloxNotification("While Ur mid Flowing Water, spam Lethal Whirlwind Stream to land the attack and make it a Kyoto!")
     end
 })
 
@@ -108,6 +108,7 @@ local function pressKey2()
     end
 end
 
-showRobloxNotification("Loaded by Xyris Hub Team")
+-- Initialize the library to display the UI
+library:Init()
 
-Libary:Init()
+showRobloxNotification("Loaded by Xyris Hub Team")
