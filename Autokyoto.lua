@@ -5,7 +5,7 @@ local AutoKyotoButton = Instance.new("TextButton")
 local PingButton = Instance.new("TextButton")
 local DiscordButton = Instance.new("TextButton")
 local ToggleButton = Instance.new("ImageButton")
-local NoticeLabel = Instance.new("TextLabel")  -- Notice label for instructions
+local NoticeLabel = Instance.new("TextLabel")
 
 local plr = game.Players.LocalPlayer
 local chr = plr.Character or plr.CharacterAdded:Wait()
@@ -89,6 +89,7 @@ ToggleButton.Parent = ScreenGui
 ToggleButton.Position = UDim2.new(0.9, -30, 0.05, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Image = "rbxassetid://114282177083923"
+ToggleButton.Draggable = true  -- Make toggle button draggable
 
 ToggleButton.MouseButton1Click:Connect(function()
     uiVisible = not uiVisible
