@@ -88,7 +88,7 @@ end)
 ToggleButton.Parent = ScreenGui
 ToggleButton.Position = UDim2.new(0.9, -30, 0.05, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
-ToggleButton.Image = "rbxassetid://114282177083923"
+ToggleButton.Image = "rbxassetid://72652313268808"
 ToggleButton.Draggable = true  -- Make toggle button draggable
 
 ToggleButton.MouseButton1Click:Connect(function()
