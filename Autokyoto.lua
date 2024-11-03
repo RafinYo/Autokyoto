@@ -2,7 +2,7 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Library/refs/heads/main/Library%20toraisme/Script.lua", true))()
 
 -- Create the main window for the UI
-local FarmWindow = library:CreateWindow("Kyoto Hub")
+local FarmWindow = Library:CreateWindow("Xyris Hub - Auto Kyoto")
 
 -- Add the "Main" tab
 local MainTab = FarmWindow:AddTab("Main")
